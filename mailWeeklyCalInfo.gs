@@ -19,7 +19,7 @@ function mailWeeklyCalInfo() {
   }
  
   
-  //get the deatils (title, datetime, and color for the calendar) for each event
+  //get the details (title, datetime, and color for the calendar) for each event
   var eventDetails = []
   for(i = 0; i < id.length; i++)
   {
@@ -52,7 +52,7 @@ function mailWeeklyCalInfo() {
     body += "<p style='color:" + color + ";'>EVENT TITLE: " + eventDetails[i].title + "<br>EVENT DATE: " + eventDetails[i].date.toDateString() + "<br>EVENT START TIME: "
     + eventDetails[i].date.toLocaleTimeString() + "<br></p>"; 
    }
-  GmailApp.sendEmail("sample@gmail.com", "schedule for the next 7 days", "", { htmlBody: body, cc: "example@gmail.com", name: "j-manly man" });
+  GmailApp.sendEmail("sample@gmail.com", "schedule for the next 7 days", "", { htmlBody: body, cc: "example@gmail.com", name: "google calendar" });
 }
 
 
