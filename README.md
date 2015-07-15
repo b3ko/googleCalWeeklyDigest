@@ -1,7 +1,7 @@
 googleCalWeeklyDigest
 =====================
 
-A google script to get all the events for the next 7 days from your google calendar and then send you a email reminder
+A google script to get all the events for the next 7 days from your google calendar and then send you an email reminder. New section added: events added in the last 24 hours will show at the bottom of the email in a "New Events" section.
 
 To use this script go to http://www.google.com/script/start/ and click start scripting.
 
