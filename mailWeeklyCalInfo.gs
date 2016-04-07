@@ -93,8 +93,10 @@ function mailWeeklyCalInfo() {
       + newEvents[i].getStartTime().toLocaleTimeString() + "<br>";
     }
     body = body + "</p>";
+  } else
+  {
+    body = body + "NO NEW EVENTS</p><br><hr>";
   }
-   
   GmailApp.sendEmail("example@mail.com", "schedule for the next 7 days", "", { htmlBody: body, cc: "example@mail.com", name: "me" });
 }
 
